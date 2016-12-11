@@ -766,7 +766,7 @@ private def adjust_vent_settings() {
 				key = "ventLevel${j}$indiceRoom"
 				switchOverrideLevel = settings[key]
 				if ((!settings.thermostat) && (switchLevel == null)) { // no thermostat provided and no switchLevel is set
-					float tempInVent=getTemperatureInVent(ventSwitch) 
+					java.lang.float tempInVent=getTemperatureInVent(ventSwitch) 
                     
 					/* Logic from Keen Home                   
 					IF roomSensor > targetTemp && ventSensor > (roomSensor + 5): # a vent sensor showing a temperature that is 5 degrees Fahrenheit above the room temperature usually means that the system is heating
